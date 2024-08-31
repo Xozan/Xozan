@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Especifica que este documento es un archivo HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura que la página sea responsive, adaptándose al tamaño de la pantalla -->
+    
+    <!-- Enlace al archivo CSS de Font Awesome para usar iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Enlace a la hoja de estilo AOS para animaciones en scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Enlace al archivo CSS personalizado -->
+    <link rel="stylesheet" href="C:\Users\livay\OneDrive\Escritorio\Nativos.web\original\inicio\style.css">
+    <!-- Título de la página web -->
+    <title>Nativos web</title>
+</head>
+<body>
+    <!-- Comienzo de la sección de navegación -->
+    <nav>
+        <!-- Contenedor principal de la navegación -->
+        <div class="nav-container">
+            <!-- Logo del sitio web con animación al hacer scroll -->
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Nativos <span>Menu web</span>
+            </div>
+            <!-- Contenedor de los enlaces de navegación -->
+            <div class="links">
+                <!-- Enlaces de navegación con animaciones -->
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <a href="#">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <a href="#">About</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <a href="#">Skills</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <a href="#">Services</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <!-- Ícono de hamburguesa para el menú móvil, con función onclick -->
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <!-- Menú desplegable que aparece en pantallas pequeñas -->
+        <div class="dropdown">
+            <!-- Enlaces de navegación dentro del menú desplegable -->
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skillss</a>
+                <a href="#">Servicios</a>
+                <a href="#">Ubicación</a>
+                <!-- Ícono de cancelar para cerrar el menú desplegable -->
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Comienzo de la sección principal de contenido -->
+    <section>
+        <!-- Contenedor principal que organiza el contenido de la sección -->
+        <div class="main-container">
+            <!-- Contenedor de la imagen principal con animación -->
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="C:\Users\livay\OneDrive\Escritorio\Nativos.web\original\inicio\Captura de pantalla 2024-08-26 174911.png" alt="">
+            </div>
+            <!-- Contenedor del contenido textual -->
+            <div class="content">
+                <!-- Encabezado principal con animación -->
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">hola bienvenido somos <span> Nativos</span></h1>
+                <!-- Efecto de máquina de escribir con animación -->
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900"> Y somos <span class="typewriter-text"></span><label for="">|</label></div>
+                <!-- Párrafo de bienvenida con animación -->
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    Nicaragua es un país de belleza impresionante por su combinación de paisajes naturales y rica herencia cultural...
+                </p>
+                <!-- Enlaces a redes sociales con animación -->
+                <div class="social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/nativostodonica/about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <!-- Botón de llamada a la acción con animación -->
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <a href="C:\Users\livay\OneDrive\Escritorio\Nativos.web\original\menu.html">
+                        <button>Comenzemos</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Enlace al archivo JavaScript de AOS para inicializar animaciones -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // Inicializa AOS con un offset de 0
+      AOS.init({offset:0});
+    </script>
+    <!-- Enlace al archivo JavaScript personalizado -->
+    <script src="C:\Users\livay\OneDrive\Escritorio\Nativos.web\original\inicio\script.js"></script>
+</body>
+</html>
