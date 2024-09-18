@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- Define el tipo de documento y la versión de HTML utilizada -->
+<html lang="en">
+<!-- Elemento raíz del documento HTML, con el atributo de idioma establecido en inglés -->
+<head>
+    <!-- Contiene los metadatos y los enlaces a los estilos y scripts -->
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres del documento a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles con un ancho de viewport igual al ancho del dispositivo y una escala inicial de 1.0 -->
+    <title>menu web</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="C:/Users/livay/OneDrive/Escritorio/final_proyect/estyles/Style_container.css">
+    <!-- Enlace al archivo CSS para el estilo del contenedor -->
+    <link rel="stylesheet" href="C:/Users/livay/OneDrive/Escritorio/final_proyect/estyles/Style_sidebar.css">
+    <!-- Enlace al archivo CSS para el estilo de la barra lateral -->
+</head>
+<body>
+
+    <div class="menu">
+        <!-- Contenedor para los iconos del menú -->
+        <ion-icon name="menu-outline"></ion-icon>
+        <!-- Icono de menú desplegable -->
+        <ion-icon name="close-outline"></ion-icon>
+        <!-- Icono para cerrar el menú -->
+    </div>
+
+    <div class="barra-lateral">
+        <!-- Contenedor para la barra lateral -->
+        <div>
+            <div class="nombre-pagina">
+                <!-- Contenedor para el nombre de la página -->
+                <ion-icon id="cloud" name="cloud-outline"></ion-icon>
+                <!-- Icono relacionado con la nube -->
+                <span>Nativos web</span>
+                <!-- Nombre de la página -->
+            </div>
+            <button class="boton">
+                <!-- Botón para crear un nuevo elemento -->
+                <ion-icon name="add-outline"></ion-icon>
+                <!-- Icono de añadir nuevo -->
+                <span>Create new</span>
+                <!-- Texto del botón -->
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <!-- Contenedor para la navegación -->
+            <ul>
+                <!-- Lista de navegación -->
+                <li>
+                    <!-- Elemento de lista -->
+                    <a id="inbox" data-target="section1"  href="#">
+                        <!-- Enlace con ID para bandeja de entrada -->
+                        <ion-icon name="mail-unread-outline"></ion-icon>
+                        <!-- Icono de correo no leído -->
+                        <span>POLLO</span>
+                        <!-- Texto del enlace -->
+                    </a>
+                </li>
+                <li>
+                    <!-- Elemento de lista -->
+                    <a  data-target="section2" href="#">
+                        <!-- Enlace sin ID -->
+                        <ion-icon name="star-outline"></ion-icon>
+                        <!-- Icono de estrella -->
+                        <span>RES</span>
+                        <!-- Texto del enlace -->
+                    </a>
+                </li>
+                <li>
+                    <!-- Elemento de lista -->
+                    <a data-target="section3" href="#">
+                        <!-- Enlace sin ID -->
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <!-- Icono de avión de papel -->
+                        <span>CERDO</span>
+                        <!-- Texto del enlace -->
+                    </a>
+                </li>
+                <li>
+                    <!-- Elemento de lista -->
+                    <a data-target="section4" href="#">
+                        <!-- Enlace sin ID -->
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <!-- Icono de documento con texto -->
+                        <span>MARISCOS</span>
+                        <!-- Texto del enlace -->
+                    </a>
+                </li>
+                <li>
+                    <!-- Elemento de lista -->
+                    <a data-target="section5" href="#">
+                        <!-- Enlace sin ID -->
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        <!-- Icono de marcador -->
+                        <span>COCTELES</span>
+                        <!-- Texto del enlace -->
+                    </a>
+                </li>
+                <li>
+                    <!-- Elemento de lista -->
+                    <a  data-target="section6" href="#">
+                        <!-- Enlace sin ID -->
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                        <!-- Icono de alerta -->
+                        <span>ANTOJITOS</span>
+                        <!-- Texto del enlace -->
+                    </a>
+                </li>
+                <li>
+                    <!-- Elemento de lista -->
+                    <a  data-target="section7" href="#">
+                        <!-- Enlace sin ID -->
+                        <ion-icon name="trash-outline"></ion-icon>
+                        <!-- Icono de papelera -->
+                        <span>EXTRAS</span>
+                        <!-- Texto del enlace -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+            <!-- Línea separadora -->
+            <div class="modo-oscuro">
+                <!-- Contenedor para el modo oscuro -->
+                <div class="info">
+                    <!-- Contenedor para la información del modo oscuro -->
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <!-- Icono de luna para el modo oscuro -->
+                    <span>Dark Mode</span>
+                    <!-- Texto para el modo oscuro -->
+                </div>
+                <div class="switch">
+                    <!-- Contenedor para el interruptor del modo oscuro -->
+                    <div class="base">
+                        <!-- Base del interruptor -->
+                        <div class="circulo">
+                            <!-- Círculo del interruptor -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <!-- Contenedor para la información del usuario -->
+                <img src="/Jhampier.jpg" alt="">
+                <!-- Imagen del usuario -->
+                <div class="info-usuario">
+                    <!-- Contenedor para la información del usuario -->
+                    <div class="nombre-email">
+                        <!-- Contenedor para el nombre y el email -->
+                        <span class="nombre"> Xozan .g.</span>
+                        <!-- Nombre del usuario -->
+                        <span class="email">livay1789@gmial.com</span>
+                        <!-- Email del usuario -->
+                    </div>
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    <!-- Icono de más opciones -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <!-- Contenedor principal para el contenido -->
+        <div class="carousel carousel1" id="section1"></div>
+        <!-- Carrusel para datos de usuarios -->
+        <div class="carousel carousel2" id="section2"></div>
+        <!-- Carrusel para inicialización -->
+        <div class="carousel carousel3" id="section3"></div>
+        <!-- Carrusel con ID 1 -->
+        <div class="carousel carousel4" id="section4"></div>
+        <!-- Carrusel con ID 2 -->
+        <div class="carousel carousel5"  id="section5"></div>
+        <!-- Carrusel con ID 3 -->
+        <div class="carousel carousel6"  id="section6"></div>
+
+        <div class="carousel carousel7"  id="section7"></div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Script para cargar los iconos de Ionicons en formato de módulo -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Script para cargar los iconos de Ionicons en formato no módulo -->
+    <script src="C:/Users/livay/OneDrive/Escritorio/final_proyect/scripts/Sidebar.js"></script>
+    <!-- Script para la funcionalidad de la barra lateral -->
+</body>
+</html>

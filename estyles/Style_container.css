@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "popins", sans-serif;
+    box-sizing: border-box;
+}
+
+.carousel{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 50px;
+}
+
+.carousel1{
+    background: linear-gradient(454deg, #4f4080, #9553ff)
+}
+.carousel2{
+    background: linear-gradient(454deg, #404c80, #53ff88)
+}
+.carousel3{
+    background: linear-gradient(454deg, #9574ff, #ff5353)
+}
+.carousel4{
+    background: linear-gradient(454deg, #4019bf, #53ff53)
+}
+.carousel5{
+    background: linear-gradient(454deg, #161224, #60ea60)
+}
+.carousel6{
+    background: linear-gradient(454deg, #ae143f, #612aae)
+}
+.carousel7{
+    background: linear-gradient(454deg, #dcdbdf, #60ea60)
+}
